@@ -15,7 +15,7 @@ namespace FIle_IO_PracticeGitHub
         public double Salary { get; set; }
 
 
-        public Employee()
+        public Employees()
         {
             FirstName = string.Empty;
             LastName = string.Empty;
@@ -24,7 +24,7 @@ namespace FIle_IO_PracticeGitHub
             Salary = 0;
         }
 
-        public Employee(string first, string last, string email, string gender, string salary)
+        public Employees(string first, string last, string email, string gender, string salary)
         {
             FirstName = first;
             LastName = last;

@@ -13,7 +13,7 @@
         <Label Content="Dropbox Email" HorizontalAlignment="Left" Margin="550,23,0,0" VerticalAlignment="Top"/>
         <Label Content="Average Salary:" HorizontalAlignment="Left" Margin="36,353,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtAvgSalary" HorizontalAlignment="Left" Margin="140,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <Button x:Name="btnAnalyze" Content="Analyze" HorizontalAlignment="Left" Margin="326,361,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="btnAnalyze_Click"/>
+        <Button x:Name="BtnAnalyze" Content="Analyze" HorizontalAlignment="Left" Margin="326,361,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="BtnAnalyze_Click"/>
 
     </Grid>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,14 +27,14 @@ namespace FIle_IO_PracticeGitHub
             InitializeComponent();
         }
 
-        private void btnAnalyze_Click(object sender, RoutedEventArgs e)
+        private void BtnAnalyze_Click(object sender, RoutedEventArgs e)
         {
             var file = File.ReadAllLines(PATH);
-            List<Employee> employees = new List<Employee>();
+            List<Employees> employees = new List<Employees>();
             for (int i = 1; i < file.Length; i++) // start at 1 to skip first line
             {
-                var line = file[i].Split("|"); //first_name|last_name|email|gender|salary
-                employees.Add(new Employee(line[0], line[1], line[2], line[3], line[4]));
+                var line = file[i].Split('|'); //first_name|last_name|email|gender|salary
+                employees.Add(new Employees(line[0], line[1], line[2], line[3], line[4]));
 
             }
 
